@@ -25,10 +25,10 @@ p{
     color: #606060;
 }
 i{
-    color: #2fccd0;
+    color: blueviolet;
 }
-.extra-div h2, .service-div h2{
-    font-size: 1rem;
+.extra-div h2{
+    font-size: 20px;
     margin: 20px 0 15px 0;
     font-weight: bold;
     line-height: 1.1;
@@ -59,15 +59,17 @@ i{
 .navbar::before{
     content: "";
     position: absolute;
-    height: 50px;
-    margin-top: 10px;
+    height: 70px;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     top: 0%;
     bottom: 0%;
     left: 0;
     right: 0;
-    opacity: 0.4;
+    opacity: 0.9;
     z-index: -1;
-    background-image: linear-gradient( 135deg, #002661 10%, #92FFC0 100%);
+    background-image: linear-gradient(150deg, #6018dc 0%, #eead92 100%);
 }
 .carousel-inner-first img {
     width: 100%;
@@ -97,6 +99,7 @@ i{
 .nav-item a{
     color: #fff!important;
     font-weight: bold;
+    font-size: 20px;
 }
 .header-section{
     width: 100%;
@@ -133,12 +136,40 @@ i{
     text-decoration: none;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
-.center-div p{
+/* .center-div p{
     font-size: 1.3rem;
     padding: 10px 0 20px 0;
     color: #fff;
+} */
+.carousel-caption{
+    padding-bottom: 150px!important;
+}
+.carousel-caption h3{
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px darkorchid, -5px -5px 10px darkorchid;
+    font-size: 50px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    color: indigo;
+}
+.carousel-caption a {
+    border: none;
+    background: linear-gradient(150deg, #eead92 0%, #6018dc 100%);
+    box-shadow: 0 0 10px #9900CC;
+    color: #fff;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.carousel-caption a:hover{
+    color: #fff;
+    background: linear-gradient(150deg, #6018dc 0%, #eead92 100%);
 }
 /* addition div start */
+
 .add-div{
     width: 100%;
     height: auto;
@@ -154,7 +185,7 @@ i{
 }
 .extra-div:hover{
     /* box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.3); */
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 10px -10px rgb(79, 141, 199);
     transform: translateY(-20px);
 }
 /* addition div end */
@@ -172,6 +203,7 @@ i{
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
+    padding-top: 10px;
 }
 .names h1{
     color: #2e2e2e;
@@ -179,17 +211,40 @@ i{
     text-transform: uppercase;
     font-weight: bold;
 }
-.service-icon{
+/* .service-div h2{
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    text-align:;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+} */
+
+/* .service-div .serv-head{
+    text-align: left!important;
+} */
+.service-icon i{
+    font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0!important;
+    /* margin-right: 10px; */
 }
-.progress{
+.service-icon h2{
+    font-size: 35px!important;
+}
+.services-row{
+    margin-bottom: 10px;
+}
+/* .progress{
     height: 0.6rem!important;
     margin-bottom: 25px!important;
     background: #606060;
-}
+} */
 /* Services section end */
 
 /* our pricing section details start*/
@@ -207,21 +262,22 @@ i{
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+    background: linear-gradient(150deg, #6018dc 0%, #eead92 100%);
 }
 .money{
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1;
     color: #606060;
 }
 .card{
     transition: 0.4s ease;
     border-radius: 30px!important;
+    box-shadow: 5px 4px 30px #666666 inset, -5px -5px 20px #666666 inset;
 }
 .card-header{
     font-size: 1.6rem;
     font-weight: bold;
-    background: #fff!important;
+    background: transparent!important;
     padding: 25px 9!important;
     border-radius: 30px!important;
 }
@@ -241,19 +297,19 @@ i{
     color: #606060;
 }
 .card-footer{
-    background: #fff!important;
+    background: transparent!important;
     padding: 15px 9!important;
     margin: 5px;
     margin-bottom: 10px;
     justify-content: center;
 }
 .card-footer a{
-    border: 1px solid #50d1c0;
+    border: 1px solid blueviolet;
     border-radius: 100px;
     margin: 5px 5px;
     padding: 12px 35px;
     outline: none;
-    color: #50d1c0;
+    color: blueviolet;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
@@ -263,7 +319,7 @@ i{
 }
 .card:hover .card-footer a{
     color: #fff;
-    background: #50d1c0;
+    background: linear-gradient(150deg, #6018dc 0%, #eead92 100%);
     text-decoration: none;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
@@ -272,7 +328,7 @@ i{
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 .card:hover .card-header, .card:hover .money{
-    color: #50d1c0;
+    color: blueviolet;
 }
 /* our pricing section  details end*/
 
@@ -280,19 +336,34 @@ i{
 .happyclients{
     width: 100%;
     height: 100vh;
+    margin-bottom: 10px;
 }
-.carousel-indicators li{
-    background-color: #16c9f6!important;
+.parent-box{
+    /* background-color: #2e2e2e; */
+    display: flex;
+    height: 450px;
 }
 .box{
-    height: 470px;
-    width: fit-content;
-    border-radius: 20px;
+    height: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #e7f0ea;
+    border-radius: 25px;
 }
-.showcase-img{
-    width: 100%;
+.box img{
     height: 100%;
-    border-radius: 20px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 5px;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+    display: none;   
+}
+.owl-dot span{
+    background-color: blueviolet!important;
+}
+.owl-dot span:hover{
+    background-color: #ecab93!important;
 }
 /* our showcase end CSS */
 
@@ -309,8 +380,10 @@ i{
     top: 0;
     right: 0;
     left: 0;
+    width: 100%;
     bottom: 0;
-    background: linear-gradient(333deg, #16c9f6 55%, #fff 0%);
+    /* transform: rotate(-20deg); */
+    background: linear-gradient(150deg, #eead92 0%, #6018dc 100%);
     z-index: -1;
 }
 .form-button button{
@@ -319,26 +392,54 @@ i{
     margin: 5px 5px;
     padding: 12px 35px;
     outline: none;
-    color: transparent;
+    color: #fff;
+    box-shadow: 0px 0px 10px #be3e94;
+    background: linear-gradient(150deg, #6018dc 40%, #eead92 100%);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
     text-align: center;
     display: inline-block;
     justify-content: center;
-    background: transparent;
+    /* background: transparent; */
 }
-form:hover .form-button button{
+/* form:hover .form-button button{
     background: #fff;
     color: #50d1c0;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
-}
+} */
 .form-button button:hover{
     color: #fff!important;
-    background: #14c5e4!important;
+    transition: ease;
+    background: linear-gradient(150deg, #eead92 0%, #6018dc 100%);
 }
 ::placeholder{
     font-size: 0.85rem;
+}
+.contact-add-div{
+    height: 270px;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-image: linear-gradient(150deg, #6018dc 0%, #eead92 100%);
+    border-image-slice: 1;
+}
+/* .contact-add-div li{
+    margin-left: 100px;
+    color: #e7f0ea;
+    font-size:20px;
+    margin-top: 5px;
+} */
+.contact-add p{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.contact-add p a{
+    color: aliceblue;
+}
+.contact-add p a:hover{
+    color: #33FFFF;
 }
 /* contact us styling end */
 
@@ -369,7 +470,8 @@ form:hover .form-button button{
     height: auto;
     padding: 70px 0 20 0;
     /* margin-top: 100px; */
-    background: #00abff;
+
+    background:linear-gradient(120deg, #495057 0%, #495057 10%);
     position: relative;
 }
 .footer-section p{
@@ -393,6 +495,16 @@ form:hover .form-button button{
     font-weight: 400;
     color: #fff;
 }
+.aboutone address p{
+    margin: 0px;
+    margin-bottom: -10px;
+}
+.aboutone address p a{
+    color: #fff;
+}
+.aboutone address p a:hover{
+    color: #33FFFF;
+}
 .newsletter-main{
     margin-top: 10px;
 }
@@ -402,7 +514,7 @@ form:hover .form-button button{
 }
 .footer-section h3{
     text-transform: uppercase;
-    color: #6dddce;
+    color: #adb5bd;
     margin-bottom: 25px;
     font-size: 1.2rem!important;
     font-weight: 600;
@@ -414,10 +526,10 @@ form:hover .form-button button{
     position: fixed;
     bottom: 20px;
     right: 40px;
-    /* z-index: 99; */
+    z-index: 02;
     border: none;
     color: #fff;
-    background-color: #31837f;
+    background-color: blueviolet;
     padding: 10px;
     border-radius: 10px;
 }
@@ -435,6 +547,36 @@ form:hover .form-button button{
 
 /* *********Main CSS End*********  */
 
+/******** Custom Scrollar *******/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: blueviolet; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: blueviolet; 
+  }
+
+  /***** for firefox ******/
+  html{
+      overflow-y: scroll;
+      scrollbar-color: blueviolet;
+      scrollbar-width: 10px;
+  }
+/******** Custom Scrollar end*******/
 
 /* ********Media Quaries*********** */
 
